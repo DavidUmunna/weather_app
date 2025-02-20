@@ -4,7 +4,7 @@ $secondary-color: #2ecc71;
 $background-color: #ecf0f1;
 $text-color: #2c3e50;
 $border-radius: 8px;
-$font-family: 'Arial, sans-serif';
+$font-family: 'Roboto, sans-serif';
 
 // Global Styles
 * {
@@ -21,6 +21,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -66,12 +70,21 @@ body {
 }
 
 .details {
-  display: flex;
+  display: flex ;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.details div {
+.details .detail {
+    background-color: $secondary-color;
+    color: #fff;
+    padding: 10px;
+    border-radius: $border-radius;
+    width: 45%;
+    margin-bottom: 10px;
+  }
+/*.details div {
   background-color: $secondary-color;
   color: #fff;
   padding: 10px;
@@ -81,6 +94,10 @@ body {
 
 .details div p {
   margin-bottom: 5px;
+}*/
+
+.sunset_style{
+    margin-left: 28%;
 }
 
 .footer {
