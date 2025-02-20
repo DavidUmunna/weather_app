@@ -1,0 +1,113 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$background-color: #ecf0f1;
+$text-color: #2c3e50;
+$border-radius: 8px;
+$font-family: 'Arial, sans-serif';
+
+// Global Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $text-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 20px;
+  border-radius: $border-radius $border-radius 0 0;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+.weather-info {
+  padding: 20px;
+}
+
+.weather-info h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.weather-info p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.details div {
+  background-color: $secondary-color;
+  color: #fff;
+  padding: 10px;
+  border-radius: $border-radius;
+  width: 45%;
+}
+
+.details div p {
+  margin-bottom: 5px;
+}
+
+.footer {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 10px;
+  border-radius: 0 0 $border-radius $border-radius;
+  font-size: 14px;
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .weather-info h2 {
+    font-size: 36px;
+  }
+
+  .weather-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .details {
+    flex-direction: column;
+  }
+
+  .details div {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
